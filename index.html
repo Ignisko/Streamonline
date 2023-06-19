@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Formularz</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500;700&display=swap" rel="stylesheet">
+<body>
+
+
+<!-- Artykuł -->
+<section id="article-view" class="section1">
+  <div class="background-image" img src="https://cdn.pixabay.com/photo/2016/11/29/13/25/ace-1869825_1280.jpg" >
+    <div class="image-text-wrapper" >
+        <div class="text-overlay">
+            <h1>Pokaż swój świat</h1>
+            <p id="p1">Streaming w nowej odsłonie</p>
+        </div>
+  </div>
+  
+  </div>
+  <h2> Streaming jest fantastyczny </h2>
+  <p id="p2"> "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."</p>
+</section>
+
+
+ <!-- Formularz -->
+<section id="form-view" class="section2">
+   <form action="/action_page.php" autocomplete="off">
+
+    <div>
+      <label for="name">Imię</label>
+      <input type="text" id="name" name="name" />
+
+      <label for="surname">Nazwisko</label>
+      <input type="text" id="surname" name="surname" />
+
+      <label for="wojewodztwa">Wybierz województwo:</label>
+      <select name="wojewodztwa" id="wojewodztwa">
+        <option value="dolnoslaskie">Dolnośląskie</option>
+        <option value="kujawsko-pomorskie">Kujawsko-Pomorskie</option>
+        <option value="lubelskie">Lubelskie</option>
+        <option value="lubuskie">Lubuskie</option>
+        <option value="lodzkie">Łódzkie</option>
+        <option value="malopolskie">Małopolskie</option>
+        <option value="mazowieckie">Mazowieckie</option>
+        <option value="opolskie">Opolskie</option>
+        <option value="podkarpackie">Podkarpackie</option>
+        <option value="podlaskie">Podlaskie</option>
+        <option value="pomorskie">Pomorskie</option>
+        <option value="slaskie">Śląskie</option>
+        <option value="swietokrzyskie">Świętokrzyskie</option>
+        <option value="warminsko-mazurskie">Warmińsko-Mazurskie</option>
+        <option value="wielkopolskie">Wielkopolskie</option>
+        <option value="zachodniopomorskie">Zachodniopomorskie</option>
+      </select>
+    </div> 
+    <div>
+      <label for="interests">Twoje zainteresowania</label>
+      <textarea id="interests" name="interests" rows="4" cols="50"></textarea>
+      
+      <br>
+
+      <label for="agreement">
+        <input type="checkbox" id="agreement" name="agreement" />
+        Zgoda na przetwarzanie danych
+      </label>
+
+      <br>
+
+      <input type="submit" id="submit" name="submit" value="Zapisz" />
+    </div>
+  </form>
+</section>
+
+
+  <!-- Filmik -->
+  <section id="video-view" class="section3">
+    <video id="video-player"></video>
+    
+    <div id="video-controls">
+      <input type="text" id="video-url">
+      <button id="play-button">Play</button>
+      <button id="pause-button">Pause</button>
+      <button id="skip-button">Skip 5 seconds</button>
+    </div>
+  </section>
+  
+  <script src="projekt.js"></script>
+  <link rel="stylesheet" href="styles.css">
+
+</body>
+</html>
